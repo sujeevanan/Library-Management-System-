@@ -1,10 +1,19 @@
+using Books.Infrastructure;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 
 
-// Add Swagger services
+//  Swagger services
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+//connect data base
+builder.Services.AddDbContext<BooksDbContext>(opt =>
+{
+    opt.UseSqlite(builder.Configuration.GetConnectionString("DbConnectionString"));
+});
 
 var app = builder.Build();
 
