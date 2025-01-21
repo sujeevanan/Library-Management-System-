@@ -15,7 +15,6 @@
 
     <ItemGroup>
       <Folder Include="Commands\Books\Delete Book\" />
-      <Folder Include="Commands\Books\UpdateBook\" />
     </ItemGroup>
 
     <ItemGroup>
