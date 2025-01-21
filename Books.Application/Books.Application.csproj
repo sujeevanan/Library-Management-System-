@@ -14,10 +14,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Commands\Books\Delete Book\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\Books.Contracts\Books.Contracts.csproj" />
       <ProjectReference Include="..\Books.Infrastructure\Books.Infrastructure.csproj" />
     </ItemGroup>
