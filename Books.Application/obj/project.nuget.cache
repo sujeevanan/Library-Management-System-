@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "vz86qebHxv8=",
+  "dgSpecHash": "llfRLMLD+74=",
   "success": true,
   "projectFilePath": "/Users/sujeevananloganathan/Documents/Library/Books.Application/Books.Application.csproj",
   "expectedPackageFiles": [
+    "/Users/sujeevananloganathan/.nuget/packages/mapster/7.4.2-pre02/mapster.7.4.2-pre02.nupkg.sha512",
+    "/Users/sujeevananloganathan/.nuget/packages/mapster.core/1.2.3-pre02/mapster.core.1.2.3-pre02.nupkg.sha512",
+    "/Users/sujeevananloganathan/.nuget/packages/mapster.dependencyinjection/1.0.3-pre02/mapster.dependencyinjection.1.0.3-pre02.nupkg.sha512",
     "/Users/sujeevananloganathan/.nuget/packages/mediatr/12.4.1/mediatr.12.4.1.nupkg.sha512",
     "/Users/sujeevananloganathan/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/sujeevananloganathan/.nuget/packages/microsoft.entityframeworkcore/9.0.1/microsoft.entityframeworkcore.9.0.1.nupkg.sha512",
