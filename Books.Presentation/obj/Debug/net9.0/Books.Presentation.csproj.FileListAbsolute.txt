@@ -151,3 +151,12 @@
 /Users/sujeevananloganathan/Documents/Library/Books.Presentation/obj/Debug/net9.0/Books.Presentation.pdb
 /Users/sujeevananloganathan/Documents/Library/Books.Presentation/obj/Debug/net9.0/Books.Presentation.genruntimeconfig.cache
 /Users/sujeevananloganathan/Documents/Library/Books.Presentation/obj/Debug/net9.0/ref/Books.Presentation.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Mapster.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Mapster.Core.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Mapster.DependencyInjection.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/MediatR.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/MediatR.Contracts.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Books.Application.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Books.Contracts.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Books.Application.pdb
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Books.Contracts.pdb
