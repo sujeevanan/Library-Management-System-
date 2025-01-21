@@ -15,6 +15,40 @@
           }
         }
       },
+      "Mapster/7.4.2-pre02": {
+        "type": "package",
+        "dependencies": {
+          "Mapster.Core": "1.2.3-pre02"
+        },
+        "compile": {
+          "lib/net9.0/Mapster.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/Mapster.dll": {}
+        }
+      },
+      "Mapster.Core/1.2.3-pre02": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Mapster.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/Mapster.Core.dll": {}
+        }
+      },
+      "Mapster.DependencyInjection/1.0.3-pre02": {
+        "type": "package",
+        "dependencies": {
+          "Mapster": "7.4.2-pre02",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "9.0.0"
+        },
+        "compile": {
+          "lib/net9.0/Mapster.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net9.0/Mapster.DependencyInjection.dll": {}
+        }
+      },
       "MediatR/12.4.1": {
         "type": "package",
         "dependencies": {
@@ -1219,6 +1253,34 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Books.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Books.Contracts": "1.0.0",
+          "Books.Infrastructure": "1.0.0",
+          "Mapster": "7.4.2-pre02",
+          "Mapster.DependencyInjection": "1.0.3-pre02",
+          "MediatR": "12.4.1",
+          "MediatR.Contracts": "2.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Books.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Books.Application.dll": {}
+        }
+      },
+      "Books.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/Books.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Books.Contracts.dll": {}
+        }
+      },
       "Books.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -1263,6 +1325,48 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Mapster/7.4.2-pre02": {
+      "sha512": "ry6YPGImX4aL0+Jj0rn46vqYOxzeyKOdlr6LUPvby1NLc68E5T2gRhDVWxvFexgZGOIW/U8NM87kygE4xl7Qvw==",
+      "type": "package",
+      "path": "mapster/7.4.2-pre02",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/Mapster.dll",
+        "lib/net9.0/Mapster.dll",
+        "mapster.7.4.2-pre02.nupkg.sha512",
+        "mapster.nuspec"
+      ]
+    },
+    "Mapster.Core/1.2.3-pre02": {
+      "sha512": "FDVPfGvCz1RRb1PYeoddiJftxo+ANAifiaqkZbH2kijZT2GcoR1w6byLQ8Czc9YBuNZqHHV4LKeXZA+eoFuCTw==",
+      "type": "package",
+      "path": "mapster.core/1.2.3-pre02",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/Mapster.Core.dll",
+        "lib/net9.0/Mapster.Core.dll",
+        "mapster.core.1.2.3-pre02.nupkg.sha512",
+        "mapster.core.nuspec"
+      ]
+    },
+    "Mapster.DependencyInjection/1.0.3-pre02": {
+      "sha512": "1iB5RtdPRuH30kVdgDLdF5nCSE13juyiz9r3WL5ASE/q+FSyLUQtsOTKx6wSObAIxz+AmHV6dgNkzkTOcFwNtQ==",
+      "type": "package",
+      "path": "mapster.dependencyinjection/1.0.3-pre02",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net8.0/Mapster.DependencyInjection.dll",
+        "lib/net9.0/Mapster.DependencyInjection.dll",
+        "mapster.dependencyinjection.1.0.3-pre02.nupkg.sha512",
+        "mapster.dependencyinjection.nuspec"
       ]
     },
     "MediatR/12.4.1": {
@@ -3614,6 +3718,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Books.Application/1.0.0": {
+      "type": "project",
+      "path": "../Books.Application/Books.Application.csproj",
+      "msbuildProject": "../Books.Application/Books.Application.csproj"
+    },
+    "Books.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Books.Contracts/Books.Contracts.csproj",
+      "msbuildProject": "../Books.Contracts/Books.Contracts.csproj"
+    },
     "Books.Domain/1.0.0": {
       "type": "project",
       "path": "../Books.Domain/Books.Domain.csproj",
@@ -3627,6 +3741,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "Books.Application >= 1.0.0",
       "Books.Infrastructure >= 1.0.0",
       "MediatR >= 12.4.1",
       "Microsoft.AspNetCore.OpenApi >= 9.0.1",
@@ -3661,6 +3776,9 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
+            "/Users/sujeevananloganathan/Documents/Library/Books.Application/Books.Application.csproj": {
+              "projectPath": "/Users/sujeevananloganathan/Documents/Library/Books.Application/Books.Application.csproj"
+            },
             "/Users/sujeevananloganathan/Documents/Library/Books.Infrastructure/Books.Infrastructure.csproj": {
               "projectPath": "/Users/sujeevananloganathan/Documents/Library/Books.Infrastructure/Books.Infrastructure.csproj"
             }

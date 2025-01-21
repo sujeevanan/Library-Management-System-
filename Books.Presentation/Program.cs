@@ -1,3 +1,4 @@
+using Books.Application;
 using Books.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,8 @@ builder.Services.AddDbContext<BooksDbContext>(opt =>
 {
     opt.UseSqlite(builder.Configuration.GetConnectionString("DbConnectionString"));
 });
+//addApplication connection
+builder.Services.AddApplication();
 
 var app = builder.Build();
 

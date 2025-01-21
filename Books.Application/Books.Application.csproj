@@ -17,7 +17,6 @@
       <Folder Include="Commands\Books\CreateBook\" />
       <Folder Include="Commands\Books\Delete Book\" />
       <Folder Include="Commands\Books\UpdateBook\" />
-      <Folder Include="Queries\Books\GetBookById\" />
     </ItemGroup>
 
     <ItemGroup>

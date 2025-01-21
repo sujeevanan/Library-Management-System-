@@ -9,10 +9,12 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddApplication(this IServiceCollection services)
     {
+        //mediator 
         services.AddMediatR(cf =>
         {
             cf.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly());
         });
+        //mapping 
         MappingConfig.Configure();
         var config = TypeAdapterConfig.GlobalSettings;
         config.Scan(Assembly.GetExecutingAssembly());
