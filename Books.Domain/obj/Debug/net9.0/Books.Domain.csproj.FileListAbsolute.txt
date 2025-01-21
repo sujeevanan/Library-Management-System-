@@ -1,0 +1,12 @@
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/bin/Debug/net9.0/Books.Domain.deps.json
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/bin/Debug/net9.0/Books.Domain.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/bin/Debug/net9.0/Books.Domain.pdb
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/Books.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/Books.Domain.AssemblyInfoInputs.cache
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/Books.Domain.AssemblyInfo.cs
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/Books.Domain.csproj.CoreCompileInputs.cache
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/Books.Domain.sourcelink.json
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/Books.Domain.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/refint/Books.Domain.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/Books.Domain.pdb
+/Users/sujeevananloganathan/Documents/Library/Books.Domain/obj/Debug/net9.0/ref/Books.Domain.dll
