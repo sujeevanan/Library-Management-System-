@@ -6,4 +6,21 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.4.1" />
+      <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Commands\Books\CreateBook\" />
+      <Folder Include="Commands\Books\Delete Book\" />
+      <Folder Include="Commands\Books\UpdateBook\" />
+      <Folder Include="Queries\Books\GetBookById\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Books.Contracts\Books.Contracts.csproj" />
+      <ProjectReference Include="..\Books.Infrastructure\Books.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>
