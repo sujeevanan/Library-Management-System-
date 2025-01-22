@@ -160,3 +160,10 @@
 /Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Books.Contracts.dll
 /Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Books.Application.pdb
 /Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Books.Contracts.pdb
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Client/books/package-lock.json
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Client/books/package.json
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Client/books/tsconfig.app.json
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Client/books/tsconfig.json
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/Client/books/tsconfig.node.json
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/FluentValidation.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Presentation/bin/Debug/net9.0/FluentValidation.DependencyInjectionExtensions.dll
