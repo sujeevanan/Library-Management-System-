@@ -23,7 +23,7 @@ const apiConnector = {
     //create a book
     createBook:async (book:BookDto) : Promise<void> => {
         try {
-            await axios.post<number>(`${API_BASE_URL}/books`, book);
+            await axios.post<number>(`${API_BASE_URL}/books/${book.id}`, book);
         }catch(error){
             console.log(error);
             throw error;

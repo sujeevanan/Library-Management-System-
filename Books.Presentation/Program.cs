@@ -17,6 +17,14 @@ builder.Services.AddDbContext<BooksDbContext>(opt =>
 {
     opt.UseSqlite(builder.Configuration.GetConnectionString("DbConnectionString"));
 });
+//cors policy error 
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("CorsPolicy", policyBuilder =>
+    {
+        policyBuilder.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:5173");
+    });
+});
 //addApplication connection
 builder.Services.AddApplication();
 builder.Services.AddExceptionHandler<ExceptionHandler>();
@@ -31,6 +39,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseExceptionHandler(_ => { });
+app.UseCors("CorsPolicy");
 app.UseHttpsRedirection();
 app.AddBooksEndPoints();
 app.Run();
