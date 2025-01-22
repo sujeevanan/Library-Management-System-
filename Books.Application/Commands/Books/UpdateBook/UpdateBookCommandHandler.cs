@@ -1,3 +1,5 @@
+using Books.Contracts.Exceptions;
+using Books.Domain;
 using Books.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -18,7 +20,7 @@ public class UpdateBookCommandHandler: IRequestHandler<UpdateBookCommand, Unit>
         var bookToUpdate=await _booksDbContext.Books.FirstOrDefaultAsync(x=>x.Id==request.Id, cancellationToken);
         if (bookToUpdate is null)
         {
-            throw new Exception();
+            throw new NotFoundException($"{nameof(Book)} with id {nameof(Book.Id)}: {request.Id}"+$"was not found in the database");
         }
         bookToUpdate.Description = request.Description;
         bookToUpdate.Author = request.Author;

@@ -2,6 +2,7 @@ using Books.Application;
 using Books.Infrastructure;
 using Books.Presentation.Modules;
 using Microsoft.EntityFrameworkCore;
+using Movies.Presentation.Handlers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,7 @@ builder.Services.AddDbContext<BooksDbContext>(opt =>
 });
 //addApplication connection
 builder.Services.AddApplication();
+builder.Services.AddExceptionHandler<ExceptionHandler>();
 
 var app = builder.Build();
 
@@ -28,6 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseExceptionHandler(_ => { });
 app.UseHttpsRedirection();
 app.AddBooksEndPoints();
 app.Run();
