@@ -1,11 +1,12 @@
 using Books.Domain;
 using FluentValidation;
 
-namespace Books.Application.Commands.Books.CreateBook;
+namespace Books.Application.Commands.Books.UpdateBook;
 
-public class CreateBookCommandValidator: AbstractValidator<CreateBookCommand>
+public class UpdateBookCommandValidator: AbstractValidator<UpdateBookCommand>
+
 {
-    public CreateBookCommandValidator()
+    public UpdateBookCommandValidator()
     {
         RuleFor(x=>x.Category)
             .NotEmpty().WithMessage($"{nameof(Book.Category)} cannot be empty")
@@ -26,7 +27,7 @@ public class CreateBookCommandValidator: AbstractValidator<CreateBookCommand>
             .NotEmpty().WithMessage($"{nameof(Book.Description)} cannot be empty")
             .MaximumLength(1000)
             .WithMessage(x => $"{nameof(Book.Description)} cannot exceed 1000 characters");
-        
-        
     }
+   
+
 }
