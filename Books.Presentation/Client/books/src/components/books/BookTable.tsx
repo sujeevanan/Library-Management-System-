@@ -15,32 +15,37 @@ export default function BookTable() {
     },[])
     return (
         <>
-            <table className="table">
-                <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>Description</th>
-                    <th>Category</th>
-                    <th>CreateDate</th>
-                    <th>Action</th>
+            <div className="container">
+                <table className="table table-striped table-hover ">
+                    <thead>
+                    <tr className="table-dark">
+                        <th>Id</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>CreateDate</th>
+                        <th>Action</th>
 
-                </tr>
-                </thead>
-                <tbody>
-                {books.length > 0 && (
-                    books.map((book, index) => (
-                        <BookTableItem key={index} book={book}/>
-                    ))
-                )}
-                </tbody>
-            </table>
-            <NavLink to="createBook" className="btn btn-success">
-                Add Book
-            </NavLink>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {books.length > 0 && (
+                        books.map((book, index) => (
+                            <BookTableItem key={index} book={book}/>
+                        ))
+                    )}
+                    </tbody>
+                </table>
+                <div className="d-grid justify-content-md-end">
+                    <NavLink to="createBook" className="btn btn-success px-4 ">
+                        Add Book
+                    </NavLink>
+                </div>
+               
+            </div>
 
-           
+
         </>
     )
 }
