@@ -1,5 +1,6 @@
 import {BookDto} from "../../models/bookDto.ts";
 import apiConnector from "../../api/apiConnector.ts";
+import {NavLink} from "react-router-dom";
 
 interface Props{
     book:BookDto;
@@ -16,7 +17,9 @@ export default function BookTableItem({book}:Props) {
                 <td>{book.category}</td>
                 <td>{book.createDate}</td>
                 <td>
-                    <button type="button" className="btn btn-warning">Edit</button>
+                    <NavLink to={`editBook/${book.id}`} className="btn btn-warning">
+                        Edit
+                    </NavLink>
                     <button type="button" className="btn btn-danger" onClick={async ()=>{
                         await apiConnector.deleteBook(book.id!);
                         window.location.reload();

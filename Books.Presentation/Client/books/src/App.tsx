@@ -1,13 +1,22 @@
 
 import './App.css'
 import BookTable from "./components/books/BookTable.tsx";
+import {Outlet, useLocation} from "react-router-dom";
 
 function App() {
-  
+  const location = useLocation();
 
   return (
     <>
-      <BookTable/>
+        {location.pathname === '/' ? (
+            <BookTable />
+        ) : (
+            <div className="container">
+                {/*to take the children routes */}
+                <Outlet />
+            </div>
+        )}
+
     </>
   )
 }

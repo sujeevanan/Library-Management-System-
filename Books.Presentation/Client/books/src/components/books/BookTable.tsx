@@ -2,6 +2,7 @@ import {useEffect, useState} from "react";
 import {BookDto} from "../../models/bookDto.ts";
 import apiConnector from "../../api/apiConnector.ts";
 import BookTableItem from "./BookTableItem.tsx";
+import {NavLink} from "react-router-dom";
 
 export default function BookTable() {
     const[books,setBooks]=useState<BookDto[]>([]);
@@ -35,7 +36,11 @@ export default function BookTable() {
                 )}
                 </tbody>
             </table>
-            <button type="button" className="btn btn-success">Add Book</button>
+            <NavLink to="createBook" className="btn btn-success">
+                Add Book
+            </NavLink>
+
+           
         </>
     )
 }
