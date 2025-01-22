@@ -1,0 +1,12 @@
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/bin/Debug/net9.0/Books.Contracts.deps.json
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/bin/Debug/net9.0/Books.Contracts.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/bin/Debug/net9.0/Books.Contracts.pdb
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/Books.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/Books.Contracts.AssemblyInfoInputs.cache
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/Books.Contracts.AssemblyInfo.cs
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/Books.Contracts.csproj.CoreCompileInputs.cache
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/Books.Contracts.sourcelink.json
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/Books.Contracts.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/refint/Books.Contracts.dll
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/Books.Contracts.pdb
+/Users/sujeevananloganathan/Documents/Library/Books.Contracts/obj/Debug/net9.0/ref/Books.Contracts.dll

@@ -25,7 +25,7 @@ public class CreateBookCommandHandler:IRequestHandler<CreateBookCommand, int>
             CreateDate = DateTime.Now.ToUniversalTime()
         };
         await _booksDbContext.AddAsync(book, cancellationToken);
-        var id = await _booksDbContext.SaveChangesAsync(cancellationToken);
-        return id;
+         await _booksDbContext.SaveChangesAsync(cancellationToken);
+        return book.Id;
     }
 }
