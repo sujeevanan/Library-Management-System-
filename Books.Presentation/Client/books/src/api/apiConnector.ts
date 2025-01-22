@@ -23,7 +23,7 @@ const apiConnector = {
     //create a book
     createBook:async (book:BookDto) : Promise<void> => {
         try {
-            await axios.post<number>(`${API_BASE_URL}/books/${book.id}`, book);
+            await axios.post<number>(`${API_BASE_URL}/books`, book);
         }catch(error){
             console.log(error);
             throw error;
@@ -50,7 +50,7 @@ const apiConnector = {
         }
     },
     //get the book by id 
-    getBookById:async (bookId:number) : Promise<BookDto|undefined> => {
+    getBookById:async (bookId:string) : Promise<BookDto|undefined> => {
         try {
             const response=await axios.get<getBookByIdResponse>(`${API_BASE_URL}/books/${bookId}`);
             return response.data.bookDto;
