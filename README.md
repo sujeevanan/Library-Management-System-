@@ -96,8 +96,8 @@ Here are the primary API endpoints for book management:
 
 ### **Contact**  
 For questions or contributions, please contact:  
-- **Email**: [your-email@example.com]  
-- **GitHub**: [Your GitHub Profile](https://github.com/your-username)  
+- **Email**: [lsujee2000@gmail.com]  
+- **GitHub**: [Your GitHub Profile]([https://github.com/your-username](https://github.com/sujeevanan))  
 
 ---
 
